@@ -3,7 +3,7 @@ version: '3.8'
 services:
 
   api-gateway:
-    build: ./colegio-api-gateway
+    build: ./colegio-api-gateway/api-gateway
     container_name: api-gateway
     ports:
       - "9090:9090" 
@@ -11,7 +11,7 @@ services:
       - fullstack-network
 
   user-service:
-    build: ./colegio-user-service
+    build: ./colegio-user-service/user-service
     container_name: user-service
     expose:
       - "9091"
@@ -19,7 +19,7 @@ services:
       - fullstack-network
 
   academy-service:
-    build: ./colegio-academy-service
+    build: ./colegio-academy-service/academy-sercie
     container_name: academy-service
     expose:
       - "9092"
@@ -27,7 +27,7 @@ services:
       - fullstack-network
 
   records-service:
-    build: ./records-service
+    build: ./record-service/records-service
     container_name: records-service
     expose:
       - "8083"
