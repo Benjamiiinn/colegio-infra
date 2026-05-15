@@ -27,7 +27,7 @@ services:
       - fullstack-network
 
   records-service:
-    build: ./colegio-record-service
+    build: ./records-service
     container_name: records-service
     expose:
       - "8083"
@@ -35,7 +35,7 @@ services:
       - fullstack-network
 
   frontend:
-    build: ./colegio-frontend
+    build: ./Frontend
     container_name: frontend
     ports:
       - "80:80"
