@@ -19,7 +19,7 @@ services:
       - fullstack-network
 
   academy-service:
-    build: ./colegio-academy-service/academy-sercie
+    build: ./colegio-academy-service/academy-service
     container_name: academy-service
     expose:
       - "9092"
